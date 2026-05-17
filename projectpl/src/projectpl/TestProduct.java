@@ -1,3 +1,4 @@
+package projectpl;
 public class TestProduct extends Product {
 
     public TestProduct(String name) {

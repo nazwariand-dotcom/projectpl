@@ -1,6 +1,8 @@
+package projectpl;
+import java.util.ArrayList;
 import java.util.Date;
 
-public abstract class Product {
+public abstract class Product implements Item, Comparable<Product> {
 
     private static int currentProductionNumber = 1;
 
@@ -15,6 +17,16 @@ public abstract class Product {
         this.serialNumber = currentProductionNumber++;
         this.manufacturedOn = new Date();
     }
+    
+    //step 17 bonus, print berdasarkan tipe
+    public static void printType(ArrayList<Product> list, Class<?> type) {
+        for (Product p : list) {
+            if (p.getClass() == type) {
+                System.out.println(p);
+                System.out.println("-------------------");
+            }
+        }
+    }
 
     public String getName() {
         return name;
@@ -28,9 +40,10 @@ public abstract class Product {
         return serialNumber;
     }
 
-    public Date getManufacturedOn() {
-        return manufacturedOn;
+    public Date getManufactureDate() { 
+    	return manufacturedOn; 
     }
+
 
     public void setName(String name) {
         this.name = name;
@@ -39,7 +52,16 @@ public abstract class Product {
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
+    
+    public void setProductionNumber(int productionNumber) {
+        this.serialNumber = productionNumber;
+    }
 
+    @Override
+    public int compareTo(Product other) {
+        return this.name.compareTo(other.getName());
+    }
+    
     @Override
     public String toString() {
 
