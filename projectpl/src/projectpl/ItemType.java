@@ -1,9 +1,14 @@
 package projectpl;
+
 public enum ItemType {
+    Audio("AU"),
+    Visual("VI"),
+    AudioMobile("AM"),
+    VisualMobile("VM");
 
-    AUDIO,
-    VISUAL,
-    AUDIO_MOBILE,
-    VISUAL_MOBILE
+    public final String code;
 
+    ItemType(String code) {
+        this.code = code;
+    }
 }

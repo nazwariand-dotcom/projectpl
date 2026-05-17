@@ -91,3 +91,6 @@ projectpl/bin/projectpl/ItemType.class
 projectpl/bin/projectpl/Product.class
 projectpl/bin/projectpl/TestProduct.class
 projectpl/src/module-info.java
+/.metadata
+*.class
+projectpl/src/projectpl/TestAll.java
