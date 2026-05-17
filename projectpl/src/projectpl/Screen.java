@@ -1,3 +1,5 @@
+package projectpl;
+
 public class Screen implements ScreenSpec {
 
     private String resolution;
