@@ -1,3 +1,5 @@
+package projectpl;
+
 public class ScreenDriver {
     public static void main(String[] args) {
         Screen screen = new Screen("600x400", 40, 22);

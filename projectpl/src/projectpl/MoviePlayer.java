@@ -1,3 +1,5 @@
+package projectpl;
+
 public class MoviePlayer extends Product implements MultimediaControl {
 
     private Screen screen;
