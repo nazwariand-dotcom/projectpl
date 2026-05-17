@@ -1,3 +1,4 @@
+package projectpl;
 import java.util.Date;
 
 public abstract class Product {
