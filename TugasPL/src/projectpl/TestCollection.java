@@ -17,11 +17,12 @@ public class TestCollection {
         
 
         // Nanti diganti AudioPlayer & MoviePlayer, nunggu pajar & aisyah
-        productList.add(new Product("Speaker JBL") {});
-        productList.add(new Product("Apple iPod") {});
-        productList.add(new Product("Samsung TV") {});
-        productList.add(new Product("Headphone Sony") {});
+        productList.add(new AudioPlayer("Speaker JBL", "MP3"));
+        productList.add(new AudioPlayer("Apple iPod", "AAC"));
         
+        
+        productList.add(new MoviePlayer("Samsung TV", new Screen("1080p", 60, 5), MonitorType.LED));
+        productList.add(new MoviePlayer("LG Monitor", new Screen("600x400", 40, 22), MonitorType.LCD));
         // Step 15 - sebelum sorting
         System.out.println("===== SEBELUM SORTING =====");
         print(productList);
