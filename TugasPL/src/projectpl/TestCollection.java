@@ -1,6 +1,7 @@
 package projectpl;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 
 public class TestCollection {
 	public static void print(ArrayList<Product> list) {
@@ -13,35 +14,82 @@ public class TestCollection {
 	}
 	
 	public static void main(String[] args) {
-        ArrayList<Product> productList = new ArrayList<>();
-        
+	    ArrayList<Product> productList = new ArrayList<>();
+	    Scanner scanner = new Scanner(System.in);
 
-        // Nanti diganti AudioPlayer & MoviePlayer, nunggu pajar & aisyah
-        productList.add(new AudioPlayer("Speaker JBL", "MP3"));
-        productList.add(new AudioPlayer("Apple iPod", "AAC"));
-        
-        
-        productList.add(new MoviePlayer("Samsung TV", new Screen("1080p", 60, 5), MonitorType.LED));
-        productList.add(new MoviePlayer("LG Monitor", new Screen("600x400", 40, 22), MonitorType.LCD));
-        // Step 15 - sebelum sorting
-        System.out.println("===== SEBELUM SORTING =====");
-        print(productList);
+	    // Add produk via terminal
+	    String lagi = "ya";
+	    while (lagi.equalsIgnoreCase("ya")) {
 
-        // Step 14 & 15 - sorting by name
-        Collections.sort(productList);
+	        System.out.println("\nPilih jenis produk:");
+	        System.out.println("1. AudioPlayer");
+	        System.out.println("2. MoviePlayer");
+	        System.out.print("Pilihan: ");
+	        int pilihan = Integer.parseInt(scanner.nextLine());
 
-        // Step 15 - sorting
-        System.out.println("\n===== SETELAH SORTING =====");
-        print(productList);
+	        if (pilihan == 1) {
+	            System.out.print("Nama produk: ");
+	            String nama = scanner.nextLine();
+	            System.out.print("Audio Spec: ");
+	            String spec = scanner.nextLine();
+	            productList.add(new AudioPlayer(nama, spec));
+
+	        } else if (pilihan == 2) {
+	            System.out.print("Nama produk: ");
+	            String nama = scanner.nextLine();
+	            System.out.print("Resolusi (contoh: 1080p): ");
+	            String resolusi = scanner.nextLine();
+	            System.out.print("Refresh Rate: ");
+	            int refresh = Integer.parseInt(scanner.nextLine());
+	            System.out.print("Response Time: ");
+	            int response = Integer.parseInt(scanner.nextLine());
+	            System.out.println("Monitor Type (1. LCD / 2. LED): ");
+	            int monitor = Integer.parseInt(scanner.nextLine());
+	            MonitorType monitorType = (monitor == 1) ? MonitorType.LCD : MonitorType.LED;
+	            productList.add(new MoviePlayer(nama, new Screen(resolusi, refresh, response), monitorType));
+
+	        } else {
+	            System.out.println("Pilihan tidak valid!");
+	        }
+
+	        System.out.print("\nTambah produk lagi? (ya/tidak): ");
+	        lagi = scanner.nextLine();
+	    }
+
+	    // Tampilkan sebelum sorting
+	    System.out.println("\n===== SEBELUM SORTING =====");
+	    print(productList);
+
+	    // Sorting
+	    Collections.sort(productList);
+	    System.out.println("\n===== SETELAH SORTING =====");
+	    print(productList);
+
+	    // Search
+	    System.out.print("\nCari produk: ");
+	    String keyword = scanner.nextLine();
+	    searchByName(productList, keyword);
+
+	    scanner.close();
 	}
 	
-	// step 17 print cuman audio player
-//	System.out.println("=== HANYA AUDIO PLAYER ===");
-//	Product.printType(productList, AudioPlayer.class);
-//
-//	//  step 17 print cuman movie player
-//	System.out.println("=== HANYA MOVIE PLAYER ===");
-//	Product.printType(productList, MoviePlayer.class);
-//	
+	public static void searchByName(ArrayList<Product> list, String keyword) {
+	    System.out.println("===== HASIL PENCARIAN: " + keyword + " =====");
+	    boolean ketemu = false;
+
+	    for (Product p : list) {
+	        if (p.getName().toLowerCase().contains(keyword.toLowerCase())) {
+	            System.out.println(p);
+	            System.out.println("-------------------");
+	            ketemu = true;
+	        }
+	    }
+
+	    if (!ketemu) {
+	        System.out.println("Produk tidak ditemukan!");
+	    }
+	}
+	
+
 	
 }

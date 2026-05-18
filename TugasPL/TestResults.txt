@@ -1,0 +1,43 @@
+-------------------
+Manufacturer : No Bug Inc.
+Serial Number : 1
+Date : Mon May 18 20:47:13 ICT 2026
+Name : Ipod
+Audio Spec    : MP3
+Type          : Audio
+-------------------
+Manufacturer : No Bug Inc.
+Serial Number : 2
+Date : Mon May 18 20:47:13 ICT 2026
+Name : Ipod
+Audio Spec    : MP3
+Type          : Audio
+-------------------
+Manufacturer : No Bug Inc.
+Serial Number : 3
+Date : Mon May 18 20:47:57 ICT 2026
+Name : Apple TV
+Monitor Type  : LED
+Resolution    : 1080 x 1920
+Refresh Rate  : 165
+Response Time : 10
+-------------------
+Manufacturer : No Bug Inc.
+Serial Number : 4
+Date : Mon May 18 20:47:57 ICT 2026
+Name : Apple TV
+Monitor Type  : LED
+Resolution    : 1080 x 1920
+Refresh Rate  : 165
+Response Time : 10
+-------------------
+Manufacturer : No Bug Inc.
+Serial Number : 5
+Date : Mon May 18 20:47:57 ICT 2026
+Name : Apple TV
+Monitor Type  : LED
+Resolution    : 1080 x 1920
+Refresh Rate  : 165
+Response Time : 10
+-------------------
+-------------------
