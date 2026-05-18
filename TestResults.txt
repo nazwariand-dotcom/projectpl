@@ -1,0 +1,109 @@
+Code: guest
+Dept: 10dcbA
+-------------------
+Code: guest
+Dept: 20klkP
+-------------------
+Code: guest
+Dept: 10pppA
+-------------------
+Code: guest
+Dept: 10oooP
+-------------------
+Code: guest
+Dept: 14aaaP
+-------------------
+Code: guest
+Dept: 10oooD
+-------------------
+Manufacturer  : OracleProduction
+Serial Number : 1
+Date          : Mon May 18 10:17:27 WIB 2026
+Name          : Sony Speaker
+Audio Spec    : Dolby
+Type          : Audio
+-------------------
+Manufacturer  : OracleProduction
+Serial Number : 2
+Date          : Mon May 18 10:17:28 WIB 2026
+Name          : Samsung Movie
+Monitor Type  : LED
+Resolution    : 1920x1080
+Refresh Rate  : 60
+Response Time : 10
+-------------------
+-------------------
+Manufacturer  : OracleProduction
+Serial Number : 1
+Date          : Mon May 18 10:18:37 WIB 2026
+Name          : Sony Speaker
+Audio Spec    : Dolby
+Type          : Audio
+-------------------
+Manufacturer  : OracleProduction
+Serial Number : 2
+Date          : Mon May 18 10:18:38 WIB 2026
+Name          : Samsung Movie
+Monitor Type  : LED
+Resolution    : 1920x1080
+Refresh Rate  : 60
+Response Time : 10
+-------------------
+Manufacturer  : OracleProduction
+Serial Number : 3
+Date          : Mon May 18 10:18:39 WIB 2026
+Name          : Sony Speaker
+Audio Spec    : Dolby
+Type          : Audio
+-------------------
+Manufacturer  : OracleProduction
+Serial Number : 4
+Date          : Mon May 18 10:18:39 WIB 2026
+Name          : Samsung Movie
+Monitor Type  : LED
+Resolution    : 1920x1080
+Refresh Rate  : 60
+Response Time : 10
+-------------------
+Manufacturer  : OracleProduction
+Serial Number : 5
+Date          : Mon May 18 10:18:41 WIB 2026
+Name          : Samsung Movie
+Monitor Type  : LED
+Resolution    : 1920x1080
+Refresh Rate  : 60
+Response Time : 10
+-------------------
+Manufacturer  : OracleProduction
+Serial Number : 6
+Date          : Mon May 18 10:18:41 WIB 2026
+Name          : Samsung Movie
+Monitor Type  : LED
+Resolution    : 1920x1080
+Refresh Rate  : 60
+Response Time : 10
+-------------------
+Manufacturer  : OracleProduction
+Serial Number : 7
+Date          : Mon May 18 10:18:41 WIB 2026
+Name          : Samsung Movie
+Monitor Type  : LED
+Resolution    : 1920x1080
+Refresh Rate  : 60
+Response Time : 10
+-------------------
+Manufacturer  : OracleProduction
+Serial Number : 8
+Date          : Mon May 18 10:18:42 WIB 2026
+Name          : Sony Speaker
+Audio Spec    : Dolby
+Type          : Audio
+-------------------
+Manufacturer  : OracleProduction
+Serial Number : 9
+Date          : Mon May 18 10:18:42 WIB 2026
+Name          : Sony Speaker
+Audio Spec    : Dolby
+Type          : Audio
+-------------------
+-------------------
