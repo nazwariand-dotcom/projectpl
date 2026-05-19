@@ -62,7 +62,7 @@ public class EmployeeInfo {
     }
 
     private String inputName() {
-        System.out.print("masukan nama karyawan: ");
+        System.out.print("masukan nama karyawan *(Name & Surname): ");
         return in.nextLine();
     }
 
