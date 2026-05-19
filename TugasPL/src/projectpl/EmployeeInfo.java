@@ -12,6 +12,7 @@ public class EmployeeInfo {
         in = new Scanner(System.in);
         setName();
         setDeptId();
+        
     }
 
     public String getCode() {
@@ -34,7 +35,7 @@ public class EmployeeInfo {
     }
 
     private void setDeptId() {
-        System.out.print("Enter Dept ID: ");
+        System.out.print("Enter Dept ID (Format: 1 huruf besar, 3 huruf kecil, 2 angka. Contoh: Tech01): ");
         String id = in.nextLine();
 
         if (validId(id)) {
@@ -61,7 +62,7 @@ public class EmployeeInfo {
     }
 
     private String inputName() {
-        System.out.print("Enter full name: ");
+        System.out.print("masukan nama karyawan: ");
         return in.nextLine();
     }
 
@@ -72,5 +73,9 @@ public class EmployeeInfo {
     private void createEmployeeCode(StringBuilder name) {
         String[] parts = name.toString().split(" ");
         code = parts[0].substring(0,1) + parts[1];
+    }
+    
+    public StringBuilder getName() {
+        return name;
     }
 }

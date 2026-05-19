@@ -7,6 +7,9 @@ import java.util.Scanner;
 public class MainApp {
 	public static void main(String[] args) {
 
+		System.out.println("=== SELAMAT DATANG ===");
+		EmployeeInfo employee = new EmployeeInfo();
+
 		Scanner input = new Scanner(System.in);
 		boolean running = true;
 
@@ -87,12 +90,12 @@ public class MainApp {
 
 				long audioCount = products.stream().filter(p -> p instanceof AudioPlayer).count();
 				long movieCount = products.stream().filter(p -> p instanceof MoviePlayer).count();
-				long uniqueCount = products.stream() // ← tambah ini
+				long uniqueCount = products.stream() 
 						.map(p -> p.getName()).distinct().count();
 
 				System.out.println("Audio Player: " + audioCount);
 				System.out.println("Movie Player: " + movieCount);
-				System.out.println("Produk Unik: " + uniqueCount); // ← tambah ini
+				System.out.println("Produk Unik: " + uniqueCount);
 				break;
 
 			case 5:
@@ -158,6 +161,8 @@ public class MainApp {
 				System.out.println("Pilihan tidak valid");
 			}
 		}
+		System.out.println("\n=== INFO KARYAWAN ===");
+		System.out.println(employee);
 
 		input.close();
 		return;
